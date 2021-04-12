@@ -1,3 +1,7 @@
-const profileDataArr = process.argv.slice(2,process.argv.length);
+const profileDataArgs = process.argv.slice(2);
 
-profileDataArr.forEach(profileItem => console.log(profileItem));
+const printProfileData = profileDataArr => {
+  profileDataArr.forEach(profileItem => console.log(profileItem));
+};
+
+printProfileData(profileDataArgs);
